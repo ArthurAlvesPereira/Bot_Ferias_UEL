@@ -8,4 +8,4 @@ Antigamente postava tweets com mídia, porem com a atualização da API retirei 
 
 Hospedado no PythonAnywhere.
 
-[https://x.com/FeriasUel]()
+https://x.com/FeriasUel
