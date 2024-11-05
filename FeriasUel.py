@@ -19,7 +19,7 @@ api = tweepy.Client(bearer,key,secret,consumer_key,consumer_secret)
 
 # Data das datas
 
-ferias = datetime.date(2023, 12, 16)
+ferias = datetime.date(2025, 2, 28)
 agora = datetime.date.today()
 
 fdias =(ferias - agora).days
@@ -27,7 +27,7 @@ fdias =(ferias - agora).days
 # Acha o dia da semana
 #agora.weekday()
 
-# Ifs to determine the days
+# Ifs para determinar os qual a mensagem a ser mostrada
 
 if fdias != 1:
   api.create_tweet(text="Faltam " + str(fdias) + " dias para as férias da UEL!")
@@ -44,4 +44,3 @@ else:
 #     api.update_status_with_media("Faltam " + str(fdias) + " dias para as férias da UEL\nE hoje é sexta-feira!", 'Bot_Ferias_UEL/shrek-sextafeira.gif')
 #   else:
 #     api.update_status("Faltam " + str(fdias) + " dias para as férias da UEL!")
-
